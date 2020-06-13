@@ -5,10 +5,20 @@ this.engine=engine;
 var _this=this;
 this.world_name;
 
-
 this.distributionRoomMeshs=[];
 this.exhibitionHallMeshs=[];
+this.hallDistributionMeshs=[];
 
+this.monitoring_material = new THREE.MeshBasicMaterial({
+    color: "#1E90FF",
+    // emissive :0xFDE951,
+    polygonOffset: true,
+    //polygonOffsetFactor: 1, // positive value pushes polygon further away
+    polygonOffsetUnits: 1,
+    depthTest: true,
+    opacity: 0.3,
+    transparent: true,
+});
 
 this.get_meshArray = function (meshPath,meshArray) {
     //get relative path   
@@ -32,13 +42,12 @@ this.set_meshArray=function(world_name,meshPath){
         case '展厅':
             this.get_meshArray(meshPath,this.exhibitionHallMeshs)
            break;
-          
+        case '展厅配电房':
+            this.get_meshArray(meshPath,this.hallDistributionMeshs)
         default:
            break;
    } 
 }
-
-
 
 
 this.engine.world.addEventListener('loadEnd', loadEnd)
@@ -48,9 +57,9 @@ function loadEnd(){
     switch(this.world_name) {
         case '配电房':
             this.engine.camera.position.set(0,-500,200)
-            var distri=new MakerJS.distributionRoom()
+            var distributionRoom=new MakerJS.distributionRoom()
             console.log(_this.distributionRoomMeshs)
-            distri.initSceneMeshs(engine,_this.distributionRoomMeshs)
+            distributionRoom.initSceneMeshs(engine,_this.distributionRoomMeshs)
         break;
         case '展厅':
             this.engine.camera.position.set(0,-100,200)
@@ -59,8 +68,10 @@ function loadEnd(){
             exhib.init(_this.exhibitionHallMeshs)
         break;
         case '展厅配电房':
-            this.engine.camera.position.set(0,-200,200)
-            console.log("展厅配电房")
+            this.engine.camera.position.set(0,-800,500)
+            console.log(_this.hallDistributionMeshs)
+            var hallDistribution=new MakerJS.hallDistribution()
+            hallDistribution.initSceneMeshs(engine,_this.hallDistributionMeshs)
         break;
         
         default:
