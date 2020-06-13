@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<world version="1.21">
+	<materials>
+		<library>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/materials/PDJ.mat</library>
+	</materials>
+	<editor>
+		<node type="NodeLayer" id="1510133022" name="日照系统">
+			<layer>nodes/level.node</layer>
+			<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+			<node type="LightWorld" id="2095181367" name="sun">
+				<scattering>1</scattering>
+				<shadow_range>2000</shadow_range>
+				<shadow_distribute>0.233333</shadow_distribute>
+				<deferred>1</deferred>
+				<color>1 0.88341 0.637142 1</color>
+				<multiplier>1.79847</multiplier>
+				<shadow_size>4</shadow_size>
+				<shadow_softness>2</shadow_softness>
+				<transform>-0.275579 -0.477317 -0.834401 0 0.866026 -0.5 0 0 -0.417201 -0.722612 0.551158 0 -2.56563 -264.813 0.0789404 1</transform>
+			</node>
+			<node type="ObjectSky" id="2126500912" collider="0" name="sky">
+				<size>8000 8000 300</size>
+				<min_slices>256</min_slices>
+				<max_slices>512</max_slices>
+				<distribute>4</distribute>
+				<humidity>0.8</humidity>
+				<transition>0.5</transition>
+				<extinction>0.6</extinction>
+				<density_image>textures/environment/clouds.png</density_image>
+				<density_velocity>30 30 0</density_velocity>
+				<density_offset>844.638 844.638 0</density_offset>
+				<density_layer>2</density_layer>
+				<surface name="sphere" material="sky" property="surface_base">
+					<material>
+						<blend src="src_alpha" dest="one_minus_src_alpha"/>
+						<options post_scattering="1"/>
+						<state name="inscattering">1</state>
+					</material>
+				</surface>
+				<surface name="volume" material="sky" property="surface_base">
+					<material>
+						<blend src="src_alpha" dest="one_minus_src_alpha"/>
+						<options post_scattering="1" two_sided="1"/>
+						<state name="surface">1</state>
+						<state name="inscattering">1</state>
+					</material>
+				</surface>
+				<surface name="shadow" enabled="0" material="sky" property="surface_base">
+					<material>
+						<blend src="zero" dest="src_alpha"/>
+						<options/>
+						<state name="surface">2</state>
+					</material>
+				</surface>
+				<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 1000 1</transform>
+			</node>
+			<node type="WorldExpression" id="1277578981" name="NodesToPlayerBinding1">
+				<size>100000 100000 100000</size>
+				<expression>{
+
+// get player
+Player player = engine.editor.isLoaded() ? engine.editor.getPlayer() : engine.game.getPlayer();
+if(player == 0) return;
+
+// player position
+vec3 offset = vec3(0.0f,0.0f,-15.0f);
+mat4 transform = translate(player.getWorldTransform() * offset);
+
+// transform childs
+Node node = getNode();
+forloop(int i = 0; node.getNumChilds()) {
+Node child = node.getChild(i);
+child.setWorldTransform(transform);
+}
+
+}</expression>
+				<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+				<node type="NodeDummy" id="1715075075" name="NodesContainer">
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -16.3213 -471.004 1026.18 1</transform>
+					<node type="ObjectParticles" id="1216267544" collider="0" name="rain_drops">
+						<particles_type>3</particles_type>
+						<spawn_rate>0</spawn_rate>
+						<physical_mask>-1</physical_mask>
+						<length_stretch>0.1</length_stretch>
+						<emitter_type>3</emitter_type>
+						<emitter_enabled>1</emitter_enabled>
+						<emitter_size>110 110 0</emitter_size>
+						<emitter_direction>0 0 -20</emitter_direction>
+						<emitter_spread>1 1 0</emitter_spread>
+						<life_mean>1</life_mean>
+						<life_spread>0</life_spread>
+						<velocity_mean>40</velocity_mean>
+						<velocity_spread>27</velocity_spread>
+						<radius_mean>0.06</radius_mean>
+						<radius_spread>0.03</radius_spread>
+						<gravity>0 0 -10</gravity>
+						<force>
+							<attached>1</attached>
+							<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+							<radius>80</radius>
+							<attenuation>1</attenuation>
+							<attractor>0</attractor>
+							<rotator>0</rotator>
+						</force>
+						<deflector>
+							<type>1</type>
+							<attached>0</attached>
+							<transform>0.714943 -0.699183 0 0 0.699183 0.714943 0 0 0 0 1 0 -13.8654 -216.974 4.34502 1</transform>
+							<size>5.5 9.9 0</size>
+							<restitution>0.85</restitution>
+							<roughness>0</roughness>
+						</deflector>
+						<surface name="particles" max_fade_distance="1e+008" material="rain_drops" property="surface_base"/>
+						<transform>1 0 0 0 0 1 0 0 0 0 1 0 -2.44066 -4.50647 27.7426 1</transform>
+					</node>
+					<node type="ObjectParticles" id="1795963183" collider="0" name="rain_drops_collision1">
+						<particles_type>3</particles_type>
+						<collision>1</collision>
+						<culling>1</culling>
+						<spawn_rate>0</spawn_rate>
+						<physical_mask>-1</physical_mask>
+						<length_stretch>0.3</length_stretch>
+						<emitter_type>3</emitter_type>
+						<emitter_enabled>1</emitter_enabled>
+						<emitter_size>30 30 0</emitter_size>
+						<emitter_direction>0 4.96845 -20</emitter_direction>
+						<emitter_spread>1.33123 2.32492 0</emitter_spread>
+						<life_mean>1</life_mean>
+						<life_spread>0</life_spread>
+						<velocity_mean>60</velocity_mean>
+						<velocity_spread>40</velocity_spread>
+						<radius_mean>0.1</radius_mean>
+						<radius_spread>0.04</radius_spread>
+						<gravity>0 0 -10</gravity>
+						<force>
+							<attached>1</attached>
+							<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+							<radius>80</radius>
+							<attenuation>1</attenuation>
+							<attractor>0</attractor>
+							<rotator>0</rotator>
+						</force>
+						<surface name="particles" enabled="0" max_fade_distance="1e+008" material="rain_drops" property="surface_base"/>
+						<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 30 1</transform>
+						<node type="ObjectParticles" id="1567053306" collider="0" name="rain_splashes">
+							<variation_x>1</variation_x>
+							<variation_y>1</variation_y>
+							<spawn_rate>1</spawn_rate>
+							<growth_damping>1</growth_damping>
+							<emitter_type>5</emitter_type>
+							<emitter_enabled>1</emitter_enabled>
+							<emitter_direction>0 0 10</emitter_direction>
+							<life_mean>0.3</life_mean>
+							<life_spread>0.1</life_spread>
+							<velocity_mean>0</velocity_mean>
+							<velocity_spread>0.3</velocity_spread>
+							<radius_mean>0.05</radius_mean>
+							<radius_spread>0.025</radius_spread>
+							<growth_mean>0.05</growth_mean>
+							<growth_spread>0.05</growth_spread>
+							<gravity>0 0 -5</gravity>
+							<surface name="particles" material="rain_splash" property="surface_base"/>
+							<transform>1 0 0 0 0 1 0 0 0 0 1 0 3.48336 -2.71939 -0.352833 1</transform>
+						</node>
+						<node type="ObjectParticles" id="182329837" collider="0" name="rain_splashes_fume">
+							<variation_x>1</variation_x>
+							<variation_y>1</variation_y>
+							<texture_atlas>1</texture_atlas>
+							<spawn_rate>1</spawn_rate>
+							<growth_damping>1</growth_damping>
+							<emitter_type>5</emitter_type>
+							<emitter_enabled>1</emitter_enabled>
+							<emitter_direction>0 0 10</emitter_direction>
+							<life_mean>0.8</life_mean>
+							<life_spread>0.1</life_spread>
+							<velocity_mean>0.7</velocity_mean>
+							<velocity_spread>0.3</velocity_spread>
+							<radius_mean>0.2</radius_mean>
+							<radius_spread>0.05</radius_spread>
+							<growth_mean>0.1</growth_mean>
+							<growth_spread>0.05</growth_spread>
+							<gravity>0 0 -2</gravity>
+							<surface name="particles" material="fume" property="surface_base"/>
+							<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+						</node>
+					</node>
+					<node type="ObjectParticles" id="1990854000" collider="0" name="rain_drops_collision2">
+						<particles_type>3</particles_type>
+						<collision>1</collision>
+						<culling>1</culling>
+						<spawn_rate>0</spawn_rate>
+						<physical_mask>-1</physical_mask>
+						<length_stretch>0.3</length_stretch>
+						<emitter_type>3</emitter_type>
+						<emitter_enabled>1</emitter_enabled>
+						<emitter_size>70 70 0</emitter_size>
+						<emitter_direction>0 4.96845 -20</emitter_direction>
+						<emitter_spread>1.33123 2.32492 0</emitter_spread>
+						<life_mean>1</life_mean>
+						<life_spread>0</life_spread>
+						<velocity_mean>60</velocity_mean>
+						<velocity_spread>40</velocity_spread>
+						<radius_mean>0.1</radius_mean>
+						<radius_spread>0.04</radius_spread>
+						<gravity>0 0 -10</gravity>
+						<force>
+							<attached>1</attached>
+							<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+							<radius>80</radius>
+							<attenuation>1</attenuation>
+							<attractor>0</attractor>
+							<rotator>0</rotator>
+						</force>
+						<surface name="particles" enabled="0" max_fade_distance="1e+008" material="rain_drops" property="surface_base"/>
+						<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 30 1</transform>
+						<node type="ObjectParticles" id="874069119" collider="0" name="rain_fume">
+							<texture_atlas>1</texture_atlas>
+							<spawn_rate>1</spawn_rate>
+							<growth_damping>1</growth_damping>
+							<emitter_type>5</emitter_type>
+							<emitter_enabled>1</emitter_enabled>
+							<life_mean>5</life_mean>
+							<life_spread>0</life_spread>
+							<velocity_mean>0</velocity_mean>
+							<velocity_spread>0</velocity_spread>
+							<rotation_mean>0</rotation_mean>
+							<rotation_spread>20</rotation_spread>
+							<radius_mean>4</radius_mean>
+							<radius_spread>0</radius_spread>
+							<growth_mean>1</growth_mean>
+							<growth_spread>0</growth_spread>
+							<surface name="particles" material="fume" property="surface_base"/>
+							<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+						</node>
+					</node>
+				</node>
+				<node type="NodeReference" id="988389428" name="stars">
+					<reference>library/weather/nodes/stars.node</reference>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -16.3213 -471.004 1026.18 1</transform>
+				</node>
+			</node>
+			<node type="WorldExpression" id="2115067465" name="NodesToPlayerBinding2">
+				<size>100000 100000 100000</size>
+				<expression>{
+
+// get player
+Player player = engine.editor.isLoaded() ? engine.editor.getPlayer() : engine.game.getPlayer();
+if(player == 0) return;
+
+// player position
+mat4 transform = player.getWorldTransform();
+
+// transform childs
+Node node = getNode();
+forloop(int i = 0; node.getNumChilds()) {
+Node child = node.getChild(i);
+child.setWorldTransform(transform);
+}
+
+}</expression>
+				<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+				<node type="NodeDummy" id="405278391" name="NodesContainer">
+					<transform>0.999781 -0.0209424 7.56097e-010 0 0.0178372 0.851541 0.523985 0 -0.0109735 -0.52387 0.851727 0 -16.4859 -478.862 1038.96 1</transform>
+					<node type="ObjectParticles" id="1594240363" collider="0" name="camera_drops">
+						<variation_x>1</variation_x>
+						<texture_atlas>1</texture_atlas>
+						<spawn_rate>0</spawn_rate>
+						<emitter_type>3</emitter_type>
+						<emitter_enabled>1</emitter_enabled>
+						<emitter_based>1</emitter_based>
+						<emitter_continuous>0</emitter_continuous>
+						<emitter_size>2 0 2</emitter_size>
+						<emitter_direction>0 0 -1</emitter_direction>
+						<emitter_spread>0 0 0</emitter_spread>
+						<life_mean>1</life_mean>
+						<life_spread>0.3</life_spread>
+						<velocity_mean>0</velocity_mean>
+						<velocity_spread>0</velocity_spread>
+						<angle_mean>0</angle_mean>
+						<angle_spread>0</angle_spread>
+						<radius_mean>0.07</radius_mean>
+						<radius_spread>0.03</radius_spread>
+						<gravity>0 0 -0.1</gravity>
+						<surface name="particles" material="camera_drop" property="surface_base"/>
+						<transform>1 1.49789e-008 3.44132e-008 0 -2.76195e-008 0 -1 0 5.3551e-009 1 8.9407e-008 0 0.00012207 3.05176e-005 -1 1</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node type="NodeDummy" id="1472201751" name="RootNode">
+			<transform>1 0 0 0 0 -4.37114e-008 1 0 0 -1 -4.37114e-008 0 0 0 0 1</transform>
+			<node type="NodeDummy" id="996916374" name="">
+				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
+			</node>
+			<node type="NodeDummy" id="1014749104" name="　">
+				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="648262829" name="地板">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/地板.mesh</mesh_name>
+				<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+				<transform>1.35988 0 0 0 0 -3.00087 7.7735e-008 0 0 -1.31172e-007 -1.77837 0 0 -12.5401 -43.9857 1</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1306508490" name="外墙">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/外墙.mesh</mesh_name>
+				<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+				<transform>1.09043 0 0 0 0 -7.36049e-009 -0.999999 0 0 0.168388 -4.37114e-008 0 -6.10203e-005 387.724 190.43 1</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1328782043" name="规章">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/规章.mesh</mesh_name>
+				<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+				<surface name="11 - Default" material="11 - Default" property="surface_base"/>
+				<transform>5.07174e-017 1.23422e-007 0.828274 0 3.76554 4.66609e-007 -6.97607e-014 0 5.85755e-008 0.796209 -1.18644e-007 0 439.228 248.898 106.562 1</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1184749220" name="接线图">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/接线图.mesh</mesh_name>
+				<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+				<surface name="10 - Default" material="10 - Default" property="surface_base"/>
+				<transform>0.905755 0 0 0 0 -4.07597e-008 -2.30797 0 0 0.932473 -1.00885e-007 0 -30.6939 257.884 -283.018 1</transform>
+			</node>
+			<node type="NodeDummy" id="899281673" name="摄像头">
+				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 408.304 174.381 1</transform>
+				<node type="ObjectMeshStatic" id="1701017189" name="底座">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/底座.mesh</mesh_name>
+					<surface name="lambert1" material="lambert1" property="surface_base"/>
+					<transform>10.2977 0 0 0 0 -7.45208e-007 -10.2977 0 0 17.0484 -4.50126e-007 0 0 -14.1255 -0.0267938 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1916463690" name="摄像头">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/摄像头.mesh</mesh_name>
+					<surface name="lambert1" material="lambert1" property="surface_base"/>
+					<transform>9.4679 0 0 0 0 7.75565 -5.43056 0 0 5.43056 7.75565 0 -5.68434e-013 1.52588e-005 -6.75091e-013 1</transform>
+					<node type="ObjectMeshStatic" id="1458260448" name="视锥">
+						<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/视锥.mesh</mesh_name>
+						<surface name="lambert1" material="lambert1" property="surface_base"/>
+						<transform>23.9967 0 0 0 0 17.4625 -2.31929 0 0 -5.86716 21.3195 0 5.68434e-014 13.134 -2.30062e-006 1</transform>
+					</node>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="484767013" name="柜1">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜1.mesh</mesh_name>
+				<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+				<surface name="guiti" material="guiti" property="surface_base"/>
+				<transform>143.185 0 0 0 0 6.25881e-006 143.185 0 0 -143.185 6.25881e-006 0 5.02173 178.688 -75.0013 1</transform>
+				<node type="ObjectMeshStatic" id="385776990" name="柜1开关02">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜1开关02.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1.10909 0 0 0 0 0.999987 -0.005935 0 0 0.0053512 1.10908 0 -0.128947 -0.0557652 0.0316064 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="861635290" name="柜1开关03">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜1开关03.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1.10909 0 0 0 0 0.999987 -0.005935 0 0 0.0053512 1.10908 0 0.0471203 -0.0557652 0.0316064 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1585244008" name="柜1开关01">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜1开关01.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1.10909 0 0 0 0 0.999987 -0.005935 0 0 0.0053512 1.10908 0 0.0471203 -0.0557652 0.123684 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="65051562" name="柜1开关00">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜1开关00.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1.10909 0 0 0 0 0.999987 -0.005935 0 0 0.0053512 1.10908 0 -0.128947 -0.0557652 0.123684 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="191312013" name="柜1背板">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜1背板.mesh</mesh_name>
+					<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -0.00167051 0.0834548 1.06567e-007 1</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="297242403" name="柜2">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2.mesh</mesh_name>
+				<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+				<surface name="guiti" material="guiti" property="surface_base"/>
+				<transform>143.185 0 0 0 0 6.25881e-006 143.185 0 0 -143.185 6.25881e-006 0 5.02172 178.688 -75.0013 1</transform>
+				<node type="ObjectMeshStatic" id="82442281" name="断路器格">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/断路器格.mesh</mesh_name>
+					<surface name="05 - Default" material="05 - Default" property="surface_base"/>
+					<surface name="06 - Default" material="06 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -2.19794e-007 -0.0144685 7.45969e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="45194084" name="柜2红灯00">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2红灯00.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -5.32834e-008 -0.0144684 3.19701e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="626655791" name="柜2绿灯00">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2绿灯00.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -4.6623e-008 -0.0144684 3.19701e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="45322852" name="柜2开关00">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2开关00.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -7.32647e-008 -0.0144684 5.32835e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="592272112" name="柜2红灯01">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2红灯01.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -5.32834e-008 -0.0144685 0.755348 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="725451073" name="断路器格001">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/断路器格001.mesh</mesh_name>
+					<surface name="05 - Default" material="05 - Default" property="surface_base"/>
+					<surface name="06 - Default" material="06 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -2.19794e-007 -0.0144686 0.755348 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2006285539" name="柜2开关01">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2开关01.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -7.32647e-008 -0.0144684 0.755348 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1878351486" name="柜2绿灯01">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2绿灯01.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -4.6623e-008 -0.0144685 0.755348 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1196195440" name="柜2回路01">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路01.mesh</mesh_name>
+					<surface name="04 - Default" material="04 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -1.66511e-007 -0.0255718 -4.26268e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2133699157" name="柜2回路01开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路01开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -6.66043e-009 -0.0255715 -7.45969e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1255946160" name="柜2回路1红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路1红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -2.33115e-008 -0.0255714 -1.06567e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="879369718" name="柜2回路1绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路1绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 6.32741e-008 -0.0255714 -1.06567e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="856254783" name="柜2回路2绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路2绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 9.99064e-009 -0.0255716 0.18756 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1978616280" name="柜2回路2红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路2红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -4.99532e-008 -0.0255716 0.18756 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="435610877" name="柜2回路02开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路02开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -3.33021e-008 -0.0255716 0.18756 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="574769911" name="柜2回路03开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路03开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -5.99438e-008 -0.0255713 0.375121 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1546565080" name="柜2回路03红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路03红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -7.65949e-008 -0.0255715 0.37512 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2025219109" name="柜2回路03绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路03绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 9.99064e-009 -0.0255715 0.37512 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="330122903" name="柜2回路03">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路03.mesh</mesh_name>
+					<surface name="04 - Default" material="04 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -2.19794e-007 -0.0255718 0.375121 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2129769805" name="柜2回路02">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2回路02.mesh</mesh_name>
+					<surface name="04 - Default" material="04 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -1.66511e-007 -0.0255718 0.18756 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1843891867" name="柜2背板">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜2背板.mesh</mesh_name>
+					<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 -1.23218e-007 0.016977 -2.13134e-007 1</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="1735972540" name="柜3">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3.mesh</mesh_name>
+				<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+				<surface name="guiti" material="guiti" property="surface_base"/>
+				<transform>143.185 0 0 0 0 6.25881e-006 143.185 0 0 -143.185 6.25881e-006 0 5.02174 178.688 -75.0013 1</transform>
+				<node type="ObjectMeshStatic" id="500249774" name="柜3回路01">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路01.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.4986e-007 -0.0054339 3.19701e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="3179626" name="柜3回路02">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路02.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 3.62993e-007 -0.0054339 0.189226 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1139259336" name="柜3回路03">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路03.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 5.76127e-007 -0.00543401 0.378452 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="367938625" name="柜3回路04">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路04.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 8.95828e-007 -0.00543385 0.567678 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1328913111" name="柜3回路05">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路05.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.10896e-006 -0.00543396 0.756904 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1459236452" name="柜3回路06">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路06.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.32209e-006 -0.00543364 0.94613 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1868662151" name="柜3回路07">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路07.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.6418e-006 -0.00543369 1.13536 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1217874298" name="柜3回路08">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路08.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.74836e-006 -0.00543369 1.32458 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1957721611" name="柜3回路09">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路09.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.06806e-006 -0.00543358 1.51381 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="563052788" name="柜3回路10">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路10.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.17463e-006 -0.00543364 1.70303 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="957341922" name="柜3回路11">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路11.mesh</mesh_name>
+					<surface name="03 - Default" material="03 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.38776e-006 -0.00543348 1.89226 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1001727061" name="柜3背板">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3背板.mesh</mesh_name>
+					<surface name="01 - Default" material="01 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 5.19513e-007 0.0391075 -1.06567e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="203283621" name="柜3回路01绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路01绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 7.25987e-007 -0.0054339 6.39402e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1970510456" name="柜3回路02绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路02绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 9.3912e-007 -0.00543412 0.189226 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="405686217" name="柜3回路03绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路03绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.25882e-006 -0.00543401 0.378452 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="491652831" name="柜3回路04绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路04绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.47195e-006 -0.0054339 0.567678 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1264251752" name="柜3回路05绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路05绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.68509e-006 -0.00543385 0.756904 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1534062834" name="柜3回路06绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路06绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.89822e-006 -0.00543374 0.94613 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1031850509" name="柜3回路07绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路07绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.00479e-006 -0.00543374 1.13536 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="304934477" name="柜3回路08绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路08绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.32449e-006 -0.00543374 1.32458 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="424474487" name="柜3回路09绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路09绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.53762e-006 -0.00543364 1.51381 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1334725383" name="柜3回路10绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路10绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.75076e-006 -0.00543374 1.70303 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="122163044" name="柜3回路11绿灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路11绿灯.mesh</mesh_name>
+					<surface name="08 - Default" material="08 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.96389e-006 -0.0054338 1.89226 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="802992119" name="柜3回路01开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路01开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 7.15996e-007 -0.00543401 6.39402e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="299448154" name="柜3回路01红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路01红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 7.39307e-007 -0.0054339 6.39402e-007 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1126287104" name="柜3回路02开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路02开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 9.2913e-007 -0.00543385 0.189226 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="223432555" name="柜3回路02红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路02红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 9.52441e-007 -0.00543412 0.189226 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2142432855" name="柜3回路03开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路03开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.14226e-006 -0.00543385 0.378452 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="82647039" name="柜3回路03红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路03红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.16557e-006 -0.00543401 0.378452 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="482071755" name="柜3回路04开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路04开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.24883e-006 -0.00543385 0.567678 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="434526366" name="柜3回路04红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路04红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.27214e-006 -0.0054339 0.567678 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="46343694" name="柜3回路05开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路05开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.6751e-006 -0.0054338 0.756904 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1970605494" name="柜3回路05红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路05红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.69841e-006 -0.00543385 0.756904 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="842348282" name="柜3回路06开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路06开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.88823e-006 -0.00543374 0.94613 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="702188130" name="柜3回路06红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路06红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 1.91154e-006 -0.00543374 0.94613 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="719955422" name="柜3回路07开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路07开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.10136e-006 -0.00543369 1.13536 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="459711795" name="柜3回路07红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路07红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.12468e-006 -0.00543374 1.13536 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1386940354" name="柜3回路08开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路08开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.3145e-006 -0.00543353 1.32458 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1854069755" name="柜3回路08红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路08红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.23124e-006 -0.00543374 1.32458 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1606651569" name="柜3回路09开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路09开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.52763e-006 -0.00543353 1.51381 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1689747088" name="柜3回路09红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路09红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.55094e-006 -0.00543364 1.51381 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1031647741" name="柜3回路10开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路10开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.74077e-006 -0.00543342 1.70303 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1320605078" name="柜3回路10红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路10红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.76408e-006 -0.00543374 1.70303 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2041763472" name="柜3回路11开关">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路11开关.mesh</mesh_name>
+					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.9539e-006 -0.00543364 1.89226 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1851870024" name="柜3回路11红灯">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/柜3回路11红灯.mesh</mesh_name>
+					<surface name="09 - Default" material="09 - Default" property="surface_base"/>
+					<transform>1 0 0 0 0 1 0 0 0 0 1 0 2.97721e-006 -0.0054338 1.89226 1</transform>
+				</node>
+			</node>
+			<node type="ObjectMeshStatic" id="659486249" name="玻璃">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/玻璃.mesh</mesh_name>
+				<surface name="glass" material="glass" property="surface_base"/>
+				<transform>1.09043 0 0 0 0 -7.36049e-009 -0.763764 0 0 0.168388 -3.33852e-008 0 -6.10352e-005 387.724 194.828 1</transform>
+			</node>
+			<node type="ObjectMeshStatic" id="1674810431" name="圆灯">
+				<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯.mesh</mesh_name>
+				<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+				<transform>0.75221 0 0 0 0 -0.75221 3.28801e-008 0 0 -3.28801e-008 -0.75221 0 331.685 381.882 66.2147 1</transform>
+				<node type="ObjectMeshStatic" id="1255950764" name="圆灯灯管">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.846215 0 0 0 0 0.628794 -9.50378e-009 0 0 -9.50378e-009 0.846215 0 0 2.83523 2.02853e-005 1</transform>
+				</node>
+			</node>
+			<node type="NodeDummy" id="241620284" name="灯">
+				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
+				<node type="ObjectMeshStatic" id="973662822" name="圆灯灯管008">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管008.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.636532 0 0 0 0 -2.78237e-008 -0.472985 0 0 0.636532 -2.06748e-008 0 -60.3953 199.906 379.75 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="2075905003" name="圆灯灯管007">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管007.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.636532 0 0 0 0 -2.78237e-008 -0.472985 0 0 0.636532 -2.06748e-008 0 135.645 199.906 379.75 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="321619032" name="圆灯灯管006">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管006.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.636532 0 0 0 0 -2.78237e-008 -0.472985 0 0 0.636532 -2.06748e-008 0 -272.47 199.906 379.75 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1271396017" name="圆灯灯管005">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管005.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.636532 0 0 0 0 -2.78237e-008 -0.472985 0 0 0.636532 -2.06748e-008 0 331.685 199.906 379.75 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="332789115" name="圆灯灯管004">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管004.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.636532 0 0 0 0 -2.78237e-008 -0.472985 0 0 0.636532 -2.06748e-008 0 -301.589 62.8241 379.75 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="416530031" name="圆灯灯管003">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管003.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.636532 0 0 0 0 -2.78237e-008 -0.472985 0 0 0.636532 -2.06748e-008 0 358.269 62.8241 379.75 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="189790732" name="圆灯灯管002">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管002.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.636532 0 0 0 0 -2.78237e-008 -0.472985 0 0 0.636532 -2.06748e-008 0 -272.47 -66.2147 379.75 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1619762511" name="圆灯灯管001">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯灯管001.mesh</mesh_name>
+					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
+					<transform>0.636532 0 0 0 0 -2.78237e-008 -0.472985 0 0 0.636532 -2.06748e-008 0 34.6975 -66.2147 379.75 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1093129169" name="圆灯001">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯001.mesh</mesh_name>
+					<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+					<transform>0.75221 0 0 0 0 -3.28801e-008 -0.75221 0 0 0.75221 -3.28801e-008 0 34.6975 -66.2147 381.882 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1862485639" name="圆灯002">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯002.mesh</mesh_name>
+					<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+					<transform>0.75221 0 0 0 0 -3.28801e-008 -0.75221 0 0 0.75221 -3.28801e-008 0 -272.47 -66.2147 381.882 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1572335972" name="圆灯003">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯003.mesh</mesh_name>
+					<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+					<transform>0.75221 0 0 0 0 -3.28801e-008 -0.75221 0 0 0.75221 -3.28801e-008 0 358.269 62.8241 381.882 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1069534755" name="圆灯004">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯004.mesh</mesh_name>
+					<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+					<transform>0.75221 0 0 0 0 -3.28801e-008 -0.75221 0 0 0.75221 -3.28801e-008 0 -301.589 62.8241 381.882 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1269863798" name="圆灯005">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯005.mesh</mesh_name>
+					<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+					<transform>0.75221 0 0 0 0 -3.28801e-008 -0.75221 0 0 0.75221 -3.28801e-008 0 331.685 199.906 381.882 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="1790562768" name="圆灯006">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯006.mesh</mesh_name>
+					<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+					<transform>0.75221 0 0 0 0 -3.28801e-008 -0.75221 0 0 0.75221 -3.28801e-008 0 -272.47 199.906 381.882 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="681345822" name="圆灯007">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯007.mesh</mesh_name>
+					<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+					<transform>0.75221 0 0 0 0 -3.28801e-008 -0.75221 0 0 0.75221 -3.28801e-008 0 135.645 199.906 381.882 1</transform>
+				</node>
+				<node type="ObjectMeshStatic" id="191930526" name="圆灯008">
+					<mesh_name>worlds/PDJ/PDJ_2020-06-13_15-01-16-1/meshes/圆灯008.mesh</mesh_name>
+					<surface name="13 - Default" material="13 - Default" property="surface_base"/>
+					<transform>0.75221 0 0 0 0 -3.28801e-008 -0.75221 0 0 0.75221 -3.28801e-008 0 -60.3953 199.906 381.882 1</transform>
+				</node>
+			</node>
+		</node>
+	</editor>
+	<camera transform="0.999781 -0.0209424 1.61507e-009 0 0.0178372 0.851541 0.523985 0 -0.0109735 -0.52387 0.851727 0 -16.4859 -478.862 1038.96 1" target="65.1313 42.9633 201.558"/>
+</world>
