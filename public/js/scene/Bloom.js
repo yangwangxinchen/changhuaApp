@@ -107,6 +107,7 @@ MakerJS.Bloom.prototype = {
             
             objects.layers.enable(this.BLOOM_SCENE);
         }
+        // console.log('addBloomObjects')
     },
 
     // 移除不需要Bloom的物体

@@ -71,40 +71,31 @@ MakerJS.NodeSelection = function (engine) {
         //var selected = null;
         scope.intersectObjects = [];
         if (intersects.length > 0) {
-            let select = intersects[0].object;
-            scope.chooseobject = select;
-            scope.intersectObjects.push(select)
-            // for (var i in intersects) {
-            //     // if (intersects[i].object.type == "Mesh") {
-            //         let select = intersects[i].object;
-                    
-            //         // let selectpoint = intersects[i].point;
-            //         // console.log(selectpoint);    
-			// 		if(select && select.name != undefined) {
-            //             scope.chooseobject = select;
-            //             scope.intersectObjects.push(select)
-            //         }
-            //         else {
-            //             scope.chooseobject = null;
-            //         }
-            //         break;
-            // }
-            // scope.dispatchEvent({ type: 'choose'});
            
-        }else{
-            scope.chooseobject =null;
-        }
-    //    engine.effects.setSolidObjects(scope.intersectObjects);
+            for (var i in intersects) {
+                // if (intersects[i].object.type == "Mesh") {
+                    let select = intersects[i].object;
+                    
+                    // let selectpoint = intersects[i].point;
+                    // console.log(selectpoint);    
+					if(select && select.name != undefined) {
+                        scope.chooseobject = select;
+                        scope.intersectObjects.push(select)
+                    }
+                    else {
+                        scope.chooseobject = null;
+                    }
+                    break;
+            }
+      
+        // engine.effects.setSolidObjects(scope.intersectObjects);
         engine.effects.setOutlineObjects(scope.intersectObjects)
         console.log(scope.chooseobject)
         scope.dispatchEvent({ type: 'choose',content: scope.chooseobject});
         
-        // scope.dispatchEvent({ type: 'change1', content: scope.choosefloorobject });
-       
-        // scope.dispatchEvent({ type: 'change3', content: scope.choosebuildingobject });
        
     }
-};
+}}
 
 // function _select(scope, n, status){
 //     if (status == undefined && status == 0) {

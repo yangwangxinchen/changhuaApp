@@ -45,6 +45,7 @@ MakerJS.Effects = function (engine) {
         // alphaTest:0.9
     });
 
+    // this.solids = [];
     this.lines = [];
     this.aloneLines=[];
 
@@ -114,7 +115,10 @@ MakerJS.Effects.prototype = {
             for(var i in this.solids){
                 var s = this.solids[i].parent.children.pop();
                 if(s.geometry) s.geometry.dispose();
+                // this.solids[i].geometry.dispose();
+                // this.solids[i].parent.children.pop();
             }
+           
         }
 
         this.solids = [];

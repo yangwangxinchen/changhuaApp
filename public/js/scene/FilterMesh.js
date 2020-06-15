@@ -54,7 +54,10 @@ this.engine.world.addEventListener('loadEnd', loadEnd)
 //关卡加载完毕
 function loadEnd(){
 
+
+    document.getElementById('mask').style.display='none'
     switch(this.world_name) {
+        
         case '配电房':
             this.engine.camera.position.set(0,-500,200)
             var distributionRoom=new MakerJS.distributionRoom()
@@ -64,8 +67,8 @@ function loadEnd(){
         case '展厅':
             this.engine.camera.position.set(0,-100,200)
             console.log(_this.exhibitionHallMeshs)
-            var exhib=new MakerJS.exhibitionHall(engine)
-            exhib.init(_this.exhibitionHallMeshs)
+            var exhib=new MakerJS.exhibitionHall()
+            exhib.init(engine,_this.exhibitionHallMeshs)
         break;
         case '展厅配电房':
             this.engine.camera.position.set(0,-800,500)
@@ -79,7 +82,16 @@ function loadEnd(){
       } 
 }
 
+//加载动画
+var animate_loading = lottie.loadAnimation({
+    container: document.getElementById('mask'), // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/scene/loading.json' // the path to the animation json
+  });
 
+  animate_loading.setSpeed(0.7)
 
 // // gltf模型加载
 //  var loader = new THREE.GLTFLoader();

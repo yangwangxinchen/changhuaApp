@@ -1,10 +1,10 @@
 
-MakerJS.exhibitionHall=function(engine){
+MakerJS.exhibitionHall=function(){
 
-    
-        this.engine=engine;
+        var engine;
         var _this=this;
-
+       
+        this.engine=null;
         var exhibitionHallMeshs=[];
         
         this.solid_material = new THREE.MeshBasicMaterial({
@@ -162,7 +162,7 @@ MakerJS.exhibitionHall=function(engine){
         
         //更改材质   material three 材质类型
         function  change_mesh_material(meshName,material){
-          let meshNode= _this.engine.scene.getObjectByName(meshName)
+          let meshNode= engine.scene.getObjectByName(meshName)
           meshNode.material=material
         }
         
@@ -213,7 +213,7 @@ MakerJS.exhibitionHall=function(engine){
         
         }
         
-        var isLoading=true;
+    
         var airSwitchs=[]
         
         function traverseSceneMeshs(){
@@ -256,27 +256,29 @@ MakerJS.exhibitionHall=function(engine){
         }
 
         //初始化
-        this.init=function(_exhibitionHallMeshs){
-        
+        this.init=function(_engine,_exhibitionHallMeshs){
+            
+            engine=_engine;
+            this.engine=_engine
             exhibitionHallMeshs=_exhibitionHallMeshs;
             traverseSceneMeshs()
-            console.log(airSwitchs)
+           
             engine.effects.setOutlineObjects(airSwitchs)
            
-            getMqtt()
             setWallEdges()
             volumeLights_visible(false);
             switch_device(monitorings,false)
             // label_2d()
             label_3d()
             // createSprite();
-            isLoading=false;
-            wallPosition=_this.engine.scene.getObjectByName('办公室外框').position
+           
             monitorRotate()
             setGlass()
 
-            engine.addEventListener('update',()=>{this.update()})
-            this.engine.nodeSelection.addEventListener('choose',eveChoose)
+            getMqtt()
+            
+            engine.addEventListener('update',eveUpdate)
+            engine.nodeSelection.addEventListener('choose',eveChoose)
         } 
         
         function addNormalLine(x1,y1,z1,x2,y2,z2){
@@ -421,10 +423,8 @@ MakerJS.exhibitionHall=function(engine){
                
         }
         
-        function create2DLabel(){
-        
-        }
-        
+       
+        var labelRenderer
         //样式 类似billboard 
         function label_2d(){
             var obj=_this.engine.scene.getObjectByName('空调2')
@@ -526,19 +526,14 @@ MakerJS.exhibitionHall=function(engine){
                 
          }
         
-        var labelRenderer
-        var wallPosition;
-        var a=0
         //每帧检测
-        this.update=function(){
-            if(isLoading==false){
+        function eveUpdate(){
                 // if(labelRenderer){
-                //   // labelRenderer.render(this.engine.scene, this.engine.camera );
+                //   // labelRenderer.render(engine.scene, engine.camera );
                 // }
                
                 if(css3DRenderer){
-                    // a++;
-                    css3DRenderer.render(this.engine. scene, this.engine.camera );
+                    css3DRenderer.render(engine.scene, engine.camera );
                     document.getElementById("box2").innerText="温度:"+temp+"℃\n"+"湿度:"+humi+"%\n" +"CO2:"+co2+"ppm" 
                 }
                 
@@ -547,7 +542,6 @@ MakerJS.exhibitionHall=function(engine){
                     // texture.offset.y += 0.001
                 }
                    
-            }
         }
         
         this.back_cesium=function(){
@@ -555,17 +549,17 @@ MakerJS.exhibitionHall=function(engine){
             //window.location.href='http://localhost:8080/Apps/Sandcastle/gallery/my_test.html';
         }
         
-        //功能按钮
-        const btn_struct=document.getElementById('yx-button')
-        btn_struct.onclick=cameraFlyHome;
+        // //功能按钮
+        // const btn_struct=document.getElementById('yx-button')
+        // btn_struct.onclick=cameraFlyHome;
         
-        //按钮
-        const btn_back=document.getElementById('yx-button1')
-        btn_back.onclick=()=>{_this.switchRoomLamp(!inside_cir_light_state)};
+        // //按钮
+        // const btn_back=document.getElementById('yx-button1')
+        // btn_back.onclick=()=>{_this.switchRoomLamp(!inside_cir_light_state)};
         
-        //功能按钮
-        const btn_2=document.getElementById('yx-button2')
-        if(btn_2)btn_2.onclick=()=>{_this.monitorings_show(!monitorings_state)}
+        // //功能按钮
+        // const btn_2=document.getElementById('yx-button2')
+        // if(btn_2)btn_2.onclick=()=>{_this.monitorings_show(!monitorings_state)}
         
         
         //键盘按键测试
@@ -591,6 +585,9 @@ MakerJS.exhibitionHall=function(engine){
                 case '6':
                     _this.cameraFly('电柜1',-60,-2,20,3)
                    break;   
+                case '7':
+                    cameraFlyHome()
+                    break;
                 default:
                    break;
             } 
@@ -610,7 +607,7 @@ MakerJS.exhibitionHall=function(engine){
             }else if(nameNode=="空开1"||nameNode=="空开2"){
                 // _this.engine.scene.getObjectByName(nameNode).material=_this.solid_material
                 // engine.effects.addEdgesObject(engine.scene.getObjectByName(nameNode))
-                _this.cameraFly(nameNode,-60,-2,16,3)
+                _this.cameraFly("电柜0",-60,-2,16,3)
             }
         }
         

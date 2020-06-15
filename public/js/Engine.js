@@ -37,7 +37,7 @@ MakerJS.Engine = function () {
     
 
     //辅助线
-    this.axesHelper = new THREE.AxesHelper( 500 );
+    this.axesHelper = new THREE.AxesHelper( 1000 );
     this.scene.add( this.axesHelper );
 
     
@@ -149,7 +149,7 @@ this.cameraFly=function(targetPos,controlsPos,time){
 
     
     function render() {
-
+        update();
         // scope.renderer.autoClear = false;
         scope.renderer.clear();  //渲染器清除颜色、深度,模板缓存.
         scope.renderer.render(scope.scene, scope.camera);//执行渲染操作
@@ -164,7 +164,7 @@ this.cameraFly=function(targetPos,controlsPos,time){
     function animate() {
        
         requestAnimationFrame(animate);  //请求再次渲染函数
-        update();
+        
         //控制实时渲染
         if (scope.renderEnabled) {
             // stats.begin();
