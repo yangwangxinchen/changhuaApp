@@ -292,396 +292,396 @@ child.setWorldTransform(transform);
 			<node type="NodeDummy" id="1083193887" name="　">
 				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1214044844" name="bangongshiwaikuang">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/bangongshiwaikuang.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1214044844" name="办公室外框">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/办公室外框.mesh</mesh_name>
 				<surface name="Default" material="Default" property="surface_base"/>
 				<transform>-5.3797e-007 2.20653e-014 -12.3073 0 12.6147 2.23115e-006 -5.51404e-007 0 2.23115e-006 -12.6147 -3.08283e-014 0 0.564289 20.8086 -46.3024 1</transform>
 			</node>
-			<node type="NodeDummy" id="1759181006" name="shebei">
+			<node type="NodeDummy" id="1759181006" name="设备">
 				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
-				<node type="ObjectMeshStatic" id="2063499584" name="dapinxianshiqi">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/dapinxianshiqi.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2063499584" name="大屏显示器">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/大屏显示器.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-3.3679e-007 7.70486 -9.65748e-015 0 7.7648 3.3941e-007 1.35681e-006 0 1.32297e-006 8.71805e-014 -7.38637 0 7.17527 62.5882 16.4629 1</transform>
-					<node type="ObjectMeshStatic" id="1804434402" name="dapin">
-						<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/dapin.mesh</mesh_name>
+					<node type="ObjectMeshStatic" id="1804434402" name="大屏">
+						<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/大屏.mesh</mesh_name>
 						<surface name="08 - Default" material="08 - Default" property="surface_base"/>
 						<transform>1.63724 8.63473e-015 1.3814e-015 0 -3.6888e-015 1 -1.85288e-022 0 -9.836e-016 1.09991e-014 1 0 -0.0716127 4.23419e-006 5.16124e-006 1</transform>
 					</node>
 				</node>
-				<node type="ObjectMeshStatic" id="914137900" name="kongtiao2">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kongtiao2.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="914137900" name="空调2">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/空调2.mesh</mesh_name>
 					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-4.30591e-007 9.85078 -5.50311e-015 0 9.85078 4.30591e-007 1.50677e-006 0 1.02479e-006 3.69401e-014 -4.46238 0 65.5293 -1.97364 39.5433 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="391518735" name="kongtiao1">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kongtiao1.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="391518735" name="空调1">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/空调1.mesh</mesh_name>
 					<surface name="14 - Default" material="14 - Default" property="surface_base"/>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-4.30591e-007 9.85078 -5.50311e-015 0 9.85078 4.30591e-007 1.50677e-006 0 1.02479e-006 3.69401e-014 -4.46238 0 -42.3942 6.08438 39.5433 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="770140532" name="shexiangtou01">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shexiangtou01.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="770140532" name="摄像头01">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/摄像头01.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-0.918201 4.36377 0.246032 0 -8.28387 -1.8682 2.21966 0 1.15591 -7.06323e-007 4.31392 0 -50.1327 65.145 37.7366 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1483479454" name="shexiangjishiye2">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shexiangjishiye2.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1483479454" name="摄像机视野2">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/摄像机视野2.mesh</mesh_name>
 					<surface name="15 - Default" material="15 - Default" property="surface_base"/>
 					<transform>-0.554032 -0.148453 -0.819152 0 0.79124 0.212012 -0.573577 0 0.258819 -0.965926 3.79918e-009 0 -32.6321 69.5966 25.8684 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="42081716" name="kaiguan03">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kaiguan03.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="42081716" name="开关03">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/开关03.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>2.25053 2.2299 1.88838e-007 0 -2.2299 2.25053 -1.38486e-007 0 -2.31614e-007 -3.45387e-008 3.16818 0 -59.4501 56.6393 16.8034 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="572412590" name="kaiguan04">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kaiguan04.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="572412590" name="开关04">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/开关04.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>2.25053 2.2299 1.88838e-007 0 -2.2299 2.25053 -1.38486e-007 0 -2.31614e-007 -3.45387e-008 3.16818 0 -60.2962 55.801 16.8034 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="851858148" name="kaiguan02">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kaiguan02.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="851858148" name="开关02">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/开关02.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>2.25053 2.2299 1.88838e-007 0 -2.2299 2.25053 -1.38486e-007 0 -2.31614e-007 -3.45387e-008 3.16818 0 -61.1422 54.9627 16.8034 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1465113730" name="kaiguan01">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kaiguan01.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1465113730" name="开关01">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/开关01.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>2.25053 2.2299 1.88838e-007 0 -2.2299 2.25053 -1.38486e-007 0 -2.31614e-007 -3.45387e-008 3.16818 0 -61.9917 54.1357 16.8034 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2137919011" name="kongkai1">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kongkai1.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2137919011" name="空开1">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/空开1.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
 					<transform>-1.88455e-007 4.31134 -6.91346e-015 0 -36.4702 -1.59416e-006 4.63455e-006 0 -9.18626e-007 -4.06053e-014 5.0732 0 -83.4472 5.41921 18.5581 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="823768522" name="kongkai2">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kongkai2.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="823768522" name="空开2">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/空开2.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<surface name="07 - Default" material="07 - Default" property="surface_base"/>
 					<transform>-1.88455e-007 4.31134 -6.91346e-015 0 -36.4702 -1.59416e-006 4.63455e-006 0 -9.18626e-007 -4.06053e-014 5.0732 0 -83.4472 5.41921 15.5582 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1434185601" name="xianshiqi">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/xianshiqi.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1434185601" name="显示器">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/显示器.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<surface name="05 - Default" material="05 - Default" property="surface_base"/>
 					<transform>-3.30197 3.30776 2.06268e-015 0 1.62471 1.62187 4.92162e-007 0 4.73045e-007 4.72217e-007 -4.26602 0 -76.2598 38.9153 21.2691 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="707486947" name="kaiguan05">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kaiguan05.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="707486947" name="开关05">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/开关05.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-1.89621 1.99697 -1.22145e-015 0 1.99697 1.89621 8.53757e-007 0 6.19115e-007 5.87876e-007 -2.75381 0 84.1171 33.0555 8.18177 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="893539264" name="kaiguan06">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kaiguan06.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="893539264" name="开关06">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/开关06.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>1.89621 -1.99697 -2.09473e-015 0 1.99697 1.89621 -1.20373e-007 0 8.72902e-008 8.28858e-008 2.75381 0 82.697 34.555 8.06226 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1651878697" name="kaiguan07">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kaiguan07.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1651878697" name="开关07">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/开关07.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>1.89621 -1.99697 -2.09473e-015 0 1.99697 1.89621 -1.20373e-007 0 8.72902e-008 8.28858e-008 2.75381 0 81.9874 35.3023 8.06226 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="443319075" name="kaiguan08">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kaiguan08.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="443319075" name="开关08">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/开关08.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>1.89621 -1.99697 -2.09473e-015 0 1.99697 1.89621 -1.20373e-007 0 8.72902e-008 8.28858e-008 2.75381 0 83.4065 33.8078 8.06226 1</transform>
 				</node>
 			</node>
-			<node type="NodeDummy" id="161620792" name="zhuangshi">
+			<node type="NodeDummy" id="161620792" name="装饰">
 				<transform>0.233652 0 0 0 0 -1.07747e-016 -0.233652 0 0 0.233652 -1.07747e-016 0 0 0 0 1</transform>
-				<node type="ObjectMeshStatic" id="1627773490" name="ditan">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/ditan.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1627773490" name="地毯">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/地毯.mesh</mesh_name>
 					<surface name="10 - Default" material="10 - Default" property="surface_base"/>
 					<transform>-2.35994e-006 53.989 -8.64444e-014 0 2.35994e-006 -8.64444e-014 -53.989 0 -53.989 -2.35994e-006 -2.35994e-006 0 1.31149 105.195 16.8705 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1168175158" name="dixian">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/dixian.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1168175158" name="地线">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/地线.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-2.35994e-006 53.989 -8.64444e-014 0 2.35994e-006 -8.64444e-014 -53.989 0 -53.989 -2.35994e-006 -2.35994e-006 0 5.69129 22.6602 19.0978 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="880929412" name="dixian2">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/dixian2.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="880929412" name="地线2">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/地线2.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-2.35994e-006 53.989 -8.64444e-014 0 2.35994e-006 -8.64444e-014 -53.989 0 -53.989 -2.35994e-006 -2.35994e-006 0 -364.893 -15.3498 18.9927 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="489381660" name="duixiang030">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/duixiang030.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="489381660" name="对象030">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/对象030.mesh</mesh_name>
 					<surface name="02 - Default" material="02 - Default" property="surface_base"/>
 					<transform>-2.36008e-006 -21.9983 1.3525e-014 0 -45.1321 4.84197e-006 1.83124e-006 0 -1.97279e-006 2.97269e-013 -41.8938 0 -196.097 349.445 66.4334 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1908713350" name="duixiang031">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/duixiang031.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1908713350" name="对象031">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/对象031.mesh</mesh_name>
 					<surface name="02 - Default" material="02 - Default" property="surface_base"/>
 					<transform>-53.989 -2.35994e-006 1.34086e-022 0 2.35994e-006 -53.989 -2.35994e-006 0 1.03156e-013 -2.35994e-006 53.989 0 388.57 -142.654 87.8586 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1599116797" name="kongkaizhijia">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/kongkaizhijia.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1599116797" name="空开支架">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/空开支架.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-9.49088e-007 21.7126 1.33622e-015 0 -10.2237 -4.46893e-007 4.12282e-007 0 2.44432e-006 1.20305e-013 21.7126 0 -355.705 23.1935 38.8121 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="254381891" name="qiangshi">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/qiangshi.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="254381891" name="墙饰">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/墙饰.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-2.30244e-006 52.6736 5.38569e-014 0 53.989 2.35994e-006 9.54901e-006 0 9.54901e-006 3.3525e-013 -53.989 0 -0.162313 195.872 89.0581 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="133902927" name="waiqiangzhuangshi">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/waiqiangzhuangshi.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="133902927" name="外墙装饰">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/外墙装饰.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-2.35994e-006 53.989 -8.64444e-014 0 93.2586 4.07647e-006 1.47781e-005 0 1.12655e-005 5.78532e-013 -53.989 0 34.2546 276.085 91.0295 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="177000748" name="zhantai01">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/zhantai01.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="177000748" name="展台01">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/展台01.mesh</mesh_name>
 					<surface name="Default" material="Default" property="surface_base"/>
 					<transform>-2.35994e-006 53.989 -8.64444e-014 0 53.989 2.35994e-006 9.54901e-006 0 9.54901e-006 3.3525e-013 -53.989 0 449.528 10.0749 48.7148 1</transform>
 				</node>
 			</node>
-			<node type="ObjectMeshStatic" id="696057393" name="liangzhu">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/liangzhu.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="696057393" name="梁柱">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/梁柱.mesh</mesh_name>
 				<surface name="Default" material="Default" property="surface_base"/>
 				<transform>-5.3797e-007 2.20653e-014 -12.3073 0 12.6147 2.23115e-006 -5.51404e-007 0 2.23115e-006 -12.6147 -3.08283e-014 0 0.564289 20.8086 -46.3024 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1213428962" name="dengdai">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/dengdai.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1213428962" name="灯带">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/灯带.mesh</mesh_name>
 				<surface name="Default" material="Default" property="surface_base"/>
 				<transform>-5.3797e-007 2.20653e-014 -12.3073 0 12.6147 2.23115e-006 -5.51404e-007 0 2.23115e-006 -12.6147 -3.08283e-014 0 0.564289 20.8086 -46.3024 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1477348277" name="duixiang032">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/duixiang032.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1477348277" name="对象032">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/对象032.mesh</mesh_name>
 				<surface name="Default" material="Default" property="surface_base"/>
 				<transform>-5.3797e-007 2.20653e-014 -12.3073 0 12.6147 2.23115e-006 -5.51404e-007 0 2.23115e-006 -12.6147 -3.08283e-014 0 0.564289 20.8086 -46.3024 1</transform>
 			</node>
-			<node type="NodeDummy" id="57771001" name="fangdeng">
+			<node type="NodeDummy" id="57771001" name="方灯">
 				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
-				<node type="ObjectMeshStatic" id="258007846" name="fangdengdengguan00">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan00.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="258007846" name="方灯灯管00">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管00.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -63.4154 29.4091 38.2151 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="812986311" name="fangdengwaike00">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike00.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="812986311" name="方灯外壳00">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳00.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -63.4154 29.4091 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="387984468" name="fangdengdengguan01">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan01.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="387984468" name="方灯灯管01">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管01.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -63.4154 12.0394 38.2151 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1770716454" name="fangdengwaike01">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike01.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1770716454" name="方灯外壳01">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳01.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -63.4154 12.0394 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1920815831" name="fangdengdengguan02">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan02.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1920815831" name="方灯灯管02">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管02.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -63.4154 -4.18158 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1334372670" name="fangdengwaike02">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike02.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1334372670" name="方灯外壳02">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳02.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -63.4154 -4.18158 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1085582425" name="fangdengdengguan03">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan03.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1085582425" name="方灯灯管03">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管03.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -63.4154 -20.543 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2062717519" name="fangdengwaike03">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike03.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2062717519" name="方灯外壳03">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳03.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -63.4154 -20.543 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="680896992" name="fangdengdengguan04">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan04.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="680896992" name="方灯灯管04">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管04.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -25.4134 -20.543 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1560829813" name="fangdengwaike04">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike04.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1560829813" name="方灯外壳04">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳04.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -25.4134 -20.543 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1091531795" name="fangdengdengguan05">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan05.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1091531795" name="方灯灯管05">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管05.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -25.4134 -4.18158 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="751348341" name="fangdengwaike05">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike05.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="751348341" name="方灯外壳05">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳05.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -25.4134 -4.18158 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2041814404" name="fangdengdengguan06">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan06.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2041814404" name="方灯灯管06">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管06.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -25.4134 12.0393 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1224270719" name="fangdengwaike06">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike06.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1224270719" name="方灯外壳06">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳06.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -25.4134 12.0393 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2084422646" name="fangdengdengguan07">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan07.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2084422646" name="方灯灯管07">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管07.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -25.4134 29.4091 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="623886331" name="fangdengwaike07">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike07.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="623886331" name="方灯外壳07">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳07.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -25.4134 29.4091 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="555759528" name="fangdengdengguan08">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan08.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="555759528" name="方灯灯管08">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管08.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 -25.4134 47.0172 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="870079057" name="fangdengwaike08">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike08.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="870079057" name="方灯外壳08">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳08.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 -25.4134 47.0172 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1242278810" name="fangdengdengguan09">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan09.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1242278810" name="方灯灯管09">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管09.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 11.9859 47.0172 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1112498604" name="fangdengwaike09">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike09.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1112498604" name="方灯外壳09">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳09.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 11.9859 47.0172 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1383060438" name="fangdengdengguan10">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan10.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1383060438" name="方灯灯管10">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管10.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 11.986 29.4091 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1925070023" name="fangdengwaike10">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike10.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1925070023" name="方灯外壳10">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳10.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 11.986 29.4091 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1946883001" name="fangdengdengguan11">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan11.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1946883001" name="方灯灯管11">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管11.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 11.9859 12.0393 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="307311539" name="fangdengwaike11">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike11.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="307311539" name="方灯外壳11">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳11.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 11.9859 12.0393 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="829563194" name="fangdengdengguan12">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan12.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="829563194" name="方灯灯管12">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管12.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 11.986 -4.18158 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="271161503" name="fangdengwaike12">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike12.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="271161503" name="方灯外壳12">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳12.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 11.986 -4.18158 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="965981235" name="fangdengdengguan13">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan13.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="965981235" name="方灯灯管13">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管13.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 11.9859 -20.543 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1516694945" name="fangdengwaike13">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike13.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1516694945" name="方灯外壳13">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳13.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 11.9859 -20.543 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1447110312" name="fangdengdengguan14">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan14.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1447110312" name="方灯灯管14">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管14.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 42.6683 -20.543 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1261440892" name="fangdengwaike14">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike14.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1261440892" name="方灯外壳14">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳14.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 42.6683 -20.543 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1304239629" name="fangdengdengguan15">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan15.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1304239629" name="方灯灯管15">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管15.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 42.6683 -4.18159 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="281041514" name="fangdengwaike15">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike15.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="281041514" name="方灯外壳15">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳15.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 42.6683 -4.18159 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1295596179" name="fangdengdengguan16">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan16.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1295596179" name="方灯灯管16">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管16.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 42.6683 12.0393 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="342349540" name="fangdengwaike16">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike16.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="342349540" name="方灯外壳16">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳16.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 42.6683 12.0393 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1432859501" name="fangdengdengguan17">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan17.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1432859501" name="方灯灯管17">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管17.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 42.6683 29.4091 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1654085992" name="fangdengwaike17">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike17.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1654085992" name="方灯外壳17">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳17.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 42.6683 29.4091 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="435816471" name="fangdengdengguan18">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan18.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="435816471" name="方灯灯管18">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管18.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 42.6683 47.0172 38.2152 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="300463682" name="fangdengwaike18">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike18.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="300463682" name="方灯外壳18">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳18.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 42.6683 47.0172 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1832167583" name="fangdengdengguan19">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan19.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1832167583" name="方灯灯管19">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管19.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 82.5316 24.6365 38.2151 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="757456470" name="fangdengwaike19">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike19.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="757456470" name="方灯外壳19">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳19.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 82.5316 24.6365 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="778605551" name="fangdengdengguan20">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan20.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="778605551" name="方灯灯管20">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管20.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 82.5316 7.26674 38.2151 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="474942949" name="fangdengwaike20">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike20.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="474942949" name="方灯外壳20">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳20.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 82.5316 7.26674 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="612960275" name="fangdengdengguan21">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan21.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="612960275" name="方灯灯管21">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管21.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 82.5316 -8.95418 38.2151 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="145354837" name="fangdengwaike21">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike21.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="145354837" name="方灯外壳21">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳21.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 82.5316 -8.95418 38.3904 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1940598143" name="fangdengdengguan22">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengdengguan22.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1940598143" name="方灯灯管22">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯灯管22.mesh</mesh_name>
 					<surface name="lightA" material="lightA" property="surface_base"/>
 					<transform>0.833707 0 0 0 0 -3.64425e-008 -0.262108 0 0 0.833707 -1.14571e-008 0 82.5316 -25.3156 38.2151 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1153355006" name="fangdengwaike22">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengwaike22.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1153355006" name="方灯外壳22">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯外壳22.mesh</mesh_name>
 					<surface name="fangdeng" material="fangdeng" property="surface_base"/>
 					<transform>1 0 0 0 0 -4.37114e-008 -1 0 0 1 -4.37114e-008 0 82.5316 -25.3156 38.3904 1</transform>
 				</node>
@@ -689,736 +689,736 @@ child.setWorldTransform(transform);
 			<node type="NodeDummy" id="2089923164" name="">
 				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
 			</node>
-			<node type="NodeDummy" id="946317802" name="yuandeng">
+			<node type="NodeDummy" id="946317802" name="圆灯">
 				<transform>1.50897e-006 4.78232e-015 -4.99672 0 6.65354e-007 -4.99672 1.9417e-013 0 -4.99672 -6.65354e-007 -1.50897e-006 0 0 -3.00975e-008 2.11289e-026 1</transform>
-				<node type="ObjectMeshStatic" id="1211072460" name="yuandengdengguan00">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan00.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1211072460" name="圆灯灯管00">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管00.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.38084 -7.70318 18.4702 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1222211749" name="yuandengdengguan01">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan01.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1222211749" name="圆灯灯管01">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管01.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -0.522786 -7.70318 18.4702 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1832474674" name="yuandengdengguan02">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan02.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1832474674" name="圆灯灯管02">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管02.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 4.3559 -7.70318 18.4702 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1000749822" name="yuandengdengguan03">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan03.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1000749822" name="圆灯灯管03">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管03.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 4.97849 -7.70318 20.3845 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2074379902" name="yuandengdengguan04">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan04.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2074379902" name="圆灯灯管04">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管04.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 4.3559 -7.70318 22.6208 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="566897620" name="yuandengdengguan05">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan05.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="566897620" name="圆灯灯管05">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管05.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 1.13657 -7.70318 22.6208 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1613987696" name="yuandengdengguan06">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan06.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1613987696" name="圆灯灯管06">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管06.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -2.33488 -7.70318 22.6208 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1068623580" name="yuandengdengguan07">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan07.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1068623580" name="圆灯灯管07">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管07.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.3413 -7.70318 22.6208 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1392415204" name="yuandengdengguan08">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan08.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1392415204" name="圆灯灯管08">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管08.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.55542 -7.70318 20.3845 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1983812201" name="yuandengdengguan09">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan09.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1983812201" name="圆灯灯管09">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管09.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 10.2703 -7.70318 11.5366 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="922190870" name="yuandengdengguan10">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan10.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="922190870" name="圆灯灯管10">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管10.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 8.68745 -7.70318 13.1651 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="701891637" name="yuandengdengguan11">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan11.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="701891637" name="圆灯灯管11">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管11.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 7.03306 -7.70318 14.7128 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="108348911" name="yuandengdengguan12">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan12.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="108348911" name="圆灯灯管12">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管12.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 6.01395 -7.70318 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="660991528" name="yuandengdengguan13">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan13.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="660991528" name="圆灯灯管13">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管13.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.4639 -7.70318 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1086165576" name="yuandengdengguan14">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan14.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1086165576" name="圆灯灯管14">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管14.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -2.56435 -7.70318 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="292093983" name="yuandengdengguan15">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan15.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="292093983" name="圆灯灯管15">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管15.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 0.295361 -7.70318 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1149672245" name="yuandengdengguan16">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan16.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1149672245" name="圆灯灯管16">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管16.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 2.96373 -7.70318 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1156978103" name="yuandengdengguan17">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan17.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1156978103" name="圆灯灯管17">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管17.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.4639 -7.70318 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1166323277" name="yuandengdengguan18">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan18.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1166323277" name="圆灯灯管18">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管18.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -2.56435 -7.70318 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1103190033" name="yuandengdengguan19">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan19.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1103190033" name="圆灯灯管19">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管19.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 4.16191 -7.70318 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="753917935" name="yuandengdengguan20">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan20.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="753917935" name="圆灯灯管20">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管20.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 7.27711 -7.70318 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="338194336" name="yuandengdengguan21">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan21.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="338194336" name="圆灯灯管21">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管21.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 10.3547 -7.70318 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="17673616" name="yuandengdengguan22">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan22.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="17673616" name="圆灯灯管22">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管22.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.4639 -7.70318 1.66019 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="993632489" name="yuandengdengguan23">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan23.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="993632489" name="圆灯灯管23">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管23.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -2.56435 -7.70318 1.6602 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1404481787" name="yuandengdengguan24">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan24.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1404481787" name="圆灯灯管24">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管24.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 4.16191 -7.70318 1.6602 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="297466705" name="yuandengdengguan25">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan25.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="297466705" name="圆灯灯管25">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管25.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 7.27711 -7.70318 1.66019 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="585120417" name="yuandengdengguan26">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan26.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="585120417" name="圆灯灯管26">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管26.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 10.3547 -7.70318 1.6602 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="842039526" name="yuandengdengguan27">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan27.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="842039526" name="圆灯灯管27">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管27.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 1.10048 -7.70318 1.6602 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1109591259" name="yuandengdengguan28">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan28.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1109591259" name="圆灯灯管28">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管28.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.4639 -7.70318 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1760250143" name="yuandengdengguan29">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan29.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1760250143" name="圆灯灯管29">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管29.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -2.56435 -7.70318 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1246090036" name="yuandengdengguan30">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan30.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1246090036" name="圆灯灯管30">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管30.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 4.16191 -7.70318 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="235516589" name="yuandengdengguan31">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan31.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="235516589" name="圆灯灯管31">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管31.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 7.27711 -7.70318 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1992368819" name="yuandengdengguan32">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan32.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1992368819" name="圆灯灯管32">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管32.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 10.3547 -7.70318 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2072149822" name="yuandengdengguan33">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan33.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2072149822" name="圆灯灯管33">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管33.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 1.10048 -7.70318 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="307022369" name="yuandengdengguan34">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan34.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="307022369" name="圆灯灯管34">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管34.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.4639 -7.70318 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1781270087" name="yuandengdengguan35">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan35.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1781270087" name="圆灯灯管35">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管35.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -2.36776 -7.70318 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1616947279" name="yuandengdengguan36">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan36.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1616947279" name="圆灯灯管36">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管36.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 4.31149 -7.70318 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1623611082" name="yuandengdengguan37">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan37.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1623611082" name="圆灯灯管37">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管37.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 6.91908 -7.70318 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="63260258" name="yuandengdengguan38">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan38.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="63260258" name="圆灯灯管38">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管38.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 9.56663 -7.70318 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="369254432" name="yuandengdengguan39">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan39.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="369254432" name="圆灯灯管39">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管39.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 1.60259 -7.70318 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1679197210" name="yuandengdengguan40">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan40.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1679197210" name="圆灯灯管40">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管40.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 5.2552 -7.70317 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1636244673" name="yuandengdengguan41">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan41.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1636244673" name="圆灯灯管41">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管41.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -5.4639 -7.70317 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="474497048" name="yuandengdengguan42">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan42.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="474497048" name="圆灯灯管42">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管42.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -3.27478 -7.70317 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="402437642" name="yuandengdengguan43">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan43.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="402437642" name="圆灯灯管43">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管43.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 -0.0623567 -7.70317 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1530461223" name="yuandengdengguan44">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan44.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1530461223" name="圆灯灯管44">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管44.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>5.14903e-016 5.20458e-009 -0.0390857 0 -1.70849e-009 0.0325663 4.33646e-009 0 0.0390857 1.42352e-009 9.31955e-016 0 2.59624 -7.70317 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2064888070" name="yuandengdengguan45">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan45.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2064888070" name="圆灯灯管45">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管45.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>2.03908e-015 7.57124e-009 -0.056859 0 -2.48539e-009 0.047375 6.30836e-009 0 0.056859 2.07083e-009 2.64578e-015 0 14.2739 -7.70318 5.38016 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1345226885" name="yuandengdengguan46">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan46.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1345226885" name="圆灯灯管46">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管46.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>2.03908e-015 7.57124e-009 -0.056859 0 -2.48539e-009 0.047375 6.30836e-009 0 0.056859 2.07083e-009 2.64578e-015 0 14.2739 -7.70318 3.21428 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="613159991" name="yuandengdengguan47">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan47.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="613159991" name="圆灯灯管47">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管47.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>2.03908e-015 7.57124e-009 -0.056859 0 -2.48539e-009 0.047375 6.30836e-009 0 0.056859 2.07083e-009 2.64578e-015 0 14.2739 -7.70318 1.04839 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="308652075" name="yuandengdengguan48">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan48.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="308652075" name="圆灯灯管48">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管48.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>2.03908e-015 7.57124e-009 -0.056859 0 -2.48539e-009 0.047375 6.30836e-009 0 0.056859 2.07083e-009 2.64578e-015 0 14.2739 -7.70318 -1.11749 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1631685727" name="yuandengdengguan49">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan49.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1631685727" name="圆灯灯管49">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管49.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>2.03908e-015 7.57124e-009 -0.056859 0 -2.48539e-009 0.047375 6.30836e-009 0 0.056859 2.07083e-009 2.64578e-015 0 14.2739 -7.70318 -3.28337 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="127254291" name="yuandengdengguan50">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan50.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="127254291" name="圆灯灯管50">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管50.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>2.03908e-015 7.57124e-009 -0.056859 0 -2.48539e-009 0.047375 6.30836e-009 0 0.056859 2.07083e-009 2.64578e-015 0 14.2739 -7.70318 -5.44925 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="673880386" name="yuandengdengguan51">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengdengguan51.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="673880386" name="圆灯灯管51">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯灯管51.mesh</mesh_name>
 					<surface name="lightB" material="lightB" property="surface_base"/>
 					<transform>2.03908e-015 7.57124e-009 -0.056859 0 -2.48539e-009 0.047375 6.30836e-009 0 0.056859 2.07083e-009 2.64578e-015 0 14.2739 -7.70318 -7.61514 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1249604736" name="yuandengwaike00">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike00.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1249604736" name="圆灯外壳00">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳00.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.38084 -7.72413 18.4702 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2020193399" name="yuandengwaike01">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike01.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2020193399" name="圆灯外壳01">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳01.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -0.522786 -7.72413 18.4702 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="442522699" name="yuandengwaike02">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike02.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="442522699" name="圆灯外壳02">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳02.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 4.3559 -7.72413 18.4702 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1146124583" name="yuandengwaike03">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike03.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1146124583" name="圆灯外壳03">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳03.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 4.97849 -7.72413 20.3845 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="949985572" name="yuandengwaike04">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike04.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="949985572" name="圆灯外壳04">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳04.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 4.3559 -7.72413 22.6208 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1516816860" name="yuandengwaike05">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike05.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1516816860" name="圆灯外壳05">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳05.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 1.13657 -7.72413 22.6208 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1496623582" name="yuandengwaike06">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike06.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1496623582" name="圆灯外壳06">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳06.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -2.33488 -7.72413 22.6208 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1283324485" name="yuandengwaike07">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike07.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1283324485" name="圆灯外壳07">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳07.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.3413 -7.72413 22.6208 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="87737015" name="yuandengwaike08">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike08.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="87737015" name="圆灯外壳08">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳08.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.55542 -7.72413 20.3845 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1436678657" name="yuandengwaike09">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike09.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1436678657" name="圆灯外壳09">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳09.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 10.2703 -7.72413 11.5366 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="108774815" name="yuandengwaike10">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike10.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="108774815" name="圆灯外壳10">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳10.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 8.68745 -7.72413 13.1651 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1177909603" name="yuandengwaike11">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike11.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1177909603" name="圆灯外壳11">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳11.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 7.03306 -7.72413 14.7128 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1291239808" name="yuandengwaike12">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike12.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1291239808" name="圆灯外壳12">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳12.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 6.01395 -7.72413 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1794510397" name="yuandengwaike13">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike13.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1794510397" name="圆灯外壳13">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳13.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.4639 -7.72413 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1482990214" name="yuandengwaike14">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike14.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1482990214" name="圆灯外壳14">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳14.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -2.56435 -7.72413 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1895785640" name="yuandengwaike15">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike15.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1895785640" name="圆灯外壳15">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳15.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 0.295361 -7.72413 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="549771624" name="yuandengwaike16">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike16.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="549771624" name="圆灯外壳16">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳16.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 2.96373 -7.72413 15.5914 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1356029642" name="yuandengwaike17">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike17.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1356029642" name="圆灯外壳17">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳17.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.4639 -7.72413 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2078279086" name="yuandengwaike18">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike18.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2078279086" name="圆灯外壳18">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳18.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -2.56435 -7.72413 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="963002272" name="yuandengwaike19">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike19.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="963002272" name="圆灯外壳19">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳19.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 4.16191 -7.72413 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="98081533" name="yuandengwaike20">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike20.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="98081533" name="圆灯外壳20">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳20.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 7.27711 -7.72413 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1898174150" name="yuandengwaike21">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike21.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1898174150" name="圆灯外壳21">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳21.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 10.3547 -7.72413 8.57104 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="212240984" name="yuandengwaike22">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike22.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="212240984" name="圆灯外壳22">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳22.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.4639 -7.72413 1.66019 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1157144893" name="yuandengwaike23">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike23.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1157144893" name="圆灯外壳23">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳23.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -2.56435 -7.72413 1.6602 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1940646511" name="yuandengwaike24">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike24.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1940646511" name="圆灯外壳24">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳24.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 4.16191 -7.72413 1.6602 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1767438645" name="yuandengwaike25">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike25.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1767438645" name="圆灯外壳25">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳25.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 7.27711 -7.72413 1.66019 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="523280357" name="yuandengwaike26">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike26.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="523280357" name="圆灯外壳26">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳26.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 10.3547 -7.72413 1.6602 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1783183059" name="yuandengwaike27">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike27.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1783183059" name="圆灯外壳27">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳27.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 1.10048 -7.72413 1.6602 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1492582550" name="yuandengwaike28">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike28.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1492582550" name="圆灯外壳28">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳28.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.4639 -7.72413 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="191355900" name="yuandengwaike29">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike29.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="191355900" name="圆灯外壳29">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳29.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -2.56435 -7.72413 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="985433567" name="yuandengwaike30">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike30.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="985433567" name="圆灯外壳30">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳30.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 4.16191 -7.72413 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="921746459" name="yuandengwaike31">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike31.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="921746459" name="圆灯外壳31">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳31.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 7.27711 -7.72413 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="364800490" name="yuandengwaike32">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike32.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="364800490" name="圆灯外壳32">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳32.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 10.3547 -7.72413 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1573463783" name="yuandengwaike33">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike33.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1573463783" name="圆灯外壳33">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳33.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 1.10048 -7.72413 -5.62398 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1498109169" name="yuandengwaike34">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike34.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1498109169" name="圆灯外壳34">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳34.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.4639 -7.72413 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1753745200" name="yuandengwaike35">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike35.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1753745200" name="圆灯外壳35">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳35.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -2.36776 -7.72413 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2101609865" name="yuandengwaike36">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike36.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2101609865" name="圆灯外壳36">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳36.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 4.31149 -7.72413 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="410720164" name="yuandengwaike37">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike37.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="410720164" name="圆灯外壳37">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳37.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 6.91908 -7.72413 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1789261545" name="yuandengwaike38">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike38.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1789261545" name="圆灯外壳38">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳38.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 9.56663 -7.72413 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1957756821" name="yuandengwaike39">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike39.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1957756821" name="圆灯外壳39">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳39.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 1.60259 -7.72413 -12.1408 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1527711796" name="yuandengwaike40">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike40.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1527711796" name="圆灯外壳40">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳40.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 5.2552 -7.72412 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="738099397" name="yuandengwaike41">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike41.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="738099397" name="圆灯外壳41">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳41.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -5.4639 -7.72413 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1330784700" name="yuandengwaike42">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike42.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1330784700" name="圆灯外壳42">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳42.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -3.27478 -7.72413 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="34315820" name="yuandengwaike43">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike43.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="34315820" name="圆灯外壳43">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳43.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 -0.0623567 -7.72413 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1794046801" name="yuandengwaike44">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike44.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1794046801" name="圆灯外壳44">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳44.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-1.07875e-015 6.11096e-009 -0.0458925 0 -2.00603e-009 0.0868915 1.15703e-008 0 0.0458925 3.79815e-009 -3.05878e-016 0 2.59624 -7.72412 -22.1912 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="928499393" name="yuandengwaike45">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike45.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="928499393" name="圆灯外壳45">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳45.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-6.90527e-016 8.88977e-009 -0.066761 0 -2.91822e-009 0.126403 1.68316e-008 0 0.066761 5.52526e-009 4.33791e-016 0 14.2739 -7.72413 5.38016 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1637973634" name="yuandengwaike46">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike46.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1637973634" name="圆灯外壳46">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳46.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-6.90527e-016 8.88977e-009 -0.066761 0 -2.91822e-009 0.126403 1.68316e-008 0 0.066761 5.52526e-009 4.33791e-016 0 14.2739 -7.72413 3.21428 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1833039168" name="yuandengwaike47">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike47.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1833039168" name="圆灯外壳47">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳47.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-6.90527e-016 8.88977e-009 -0.066761 0 -2.91822e-009 0.126403 1.68316e-008 0 0.066761 5.52526e-009 4.33791e-016 0 14.2739 -7.72413 1.04839 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1559149034" name="yuandengwaike48">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike48.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1559149034" name="圆灯外壳48">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳48.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-6.90527e-016 8.88977e-009 -0.066761 0 -2.91822e-009 0.126403 1.68316e-008 0 0.066761 5.52526e-009 4.33791e-016 0 14.2739 -7.72413 -1.11749 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="303031027" name="yuandengwaike49">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike49.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="303031027" name="圆灯外壳49">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳49.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-6.90527e-016 8.88977e-009 -0.066761 0 -2.91822e-009 0.126403 1.68316e-008 0 0.066761 5.52526e-009 4.33791e-016 0 14.2739 -7.72413 -3.28337 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1755602549" name="yuandengwaike50">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike50.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1755602549" name="圆灯外壳50">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳50.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-6.90527e-016 8.88977e-009 -0.066761 0 -2.91822e-009 0.126403 1.68316e-008 0 0.066761 5.52526e-009 4.33791e-016 0 14.2739 -7.72413 -5.44925 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1190864252" name="yuandengwaike51">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/yuandengwaike51.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1190864252" name="圆灯外壳51">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/圆灯外壳51.mesh</mesh_name>
 					<surface name="22 - Default" material="22 - Default" property="surface_base"/>
 					<transform>-6.90527e-016 8.88977e-009 -0.066761 0 -2.91822e-009 0.126403 1.68316e-008 0 0.066761 5.52526e-009 4.33791e-016 0 14.2739 -7.72413 -7.61514 1</transform>
 				</node>
 			</node>
-			<node type="ObjectMeshStatic" id="1449555116" name="5louqiang">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/5louqiang.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1449555116" name="5楼墙">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/5楼墙.mesh</mesh_name>
 				<surface name="01 - Default" material="01 - Default" property="surface_base"/>
 				<transform>-5.31694e-007 6.29083e-015 -12.1637 0 12.4675 2.57619e-006 -5.44972e-007 0 2.57619e-006 -12.4675 -9.5562e-014 0 0.278039 20.7263 -47.4696 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1161060761" name="diban">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/diban.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1161060761" name="底板">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/底板.mesh</mesh_name>
 				<surface name="Default" material="Default" property="surface_base"/>
 				<transform>1 0 0 0 0 -1 4.37114e-008 0 0 -4.37114e-008 -1 0 0 1.49294e-014 -25.7315 1</transform>
 			</node>
 			<node type="NodeDummy" id="640811510" name="Particle View 001">
 				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1340762096" name="diangui2">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/diangui2.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1340762096" name="电柜2">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/电柜2.mesh</mesh_name>
 				<surface name="Default" material="Default" property="surface_base"/>
 				<surface name="04 - Default" material="04 - Default" property="surface_base"/>
 				<transform>-5.51404e-007 -1.08581e-014 -12.6147 0 12.6147 2.23115e-006 -5.51404e-007 0 2.23115e-006 -12.6147 -3.08283e-014 0 -104.097 18.0545 2.56852 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1894559976" name="diangui1">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/diangui1.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1894559976" name="电柜1">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/电柜1.mesh</mesh_name>
 				<surface name="Default" material="Default" property="surface_base"/>
 				<surface name="04 - Default" material="04 - Default" property="surface_base"/>
 				<transform>-5.51404e-007 -1.08581e-014 -12.6147 0 12.6147 2.23115e-006 -5.51404e-007 0 2.23115e-006 -12.6147 -3.08283e-014 0 -104.097 18.0545 2.56852 1</transform>
 			</node>
-			<node type="NodeDummy" id="257320406" name="fangdengtijiguang">
+			<node type="NodeDummy" id="257320406" name="方灯体积光">
 				<transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</transform>
-				<node type="ObjectMeshStatic" id="1273264008" name="fangdengtijiguang00">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang00.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1273264008" name="方灯体积光00">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光00.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -128.779 -75.1273 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="46138899" name="fangdengtijiguang01">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang01.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="46138899" name="方灯体积光01">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光01.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -128.779 -58.7418 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="912082069" name="fangdengtijiguang02">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang02.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="912082069" name="方灯体积光02">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光02.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -128.779 -42.5159 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1653253039" name="fangdengtijiguang03">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang03.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1653253039" name="方灯体积光03">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光03.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -128.779 -25.1539 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="2132320722" name="fangdengtijiguang04">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang04.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="2132320722" name="方灯体积光04">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光04.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -90.7523 -7.56085 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="171270843" name="fangdengtijiguang05">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang05.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="171270843" name="方灯体积光05">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光05.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -90.7514 -25.1105 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="735599948" name="fangdengtijiguang06">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang06.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="735599948" name="方灯体积光06">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光06.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -90.8251 -42.5055 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1651139601" name="fangdengtijiguang07">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang07.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1651139601" name="方灯体积光07">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光07.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -90.7523 -58.7004 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1592800929" name="fangdengtijiguang08">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang08.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1592800929" name="方灯体积光08">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光08.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -90.7523 -75.0696 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1174662182" name="fangdengtijiguang09">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang09.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1174662182" name="方灯体积光09">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光09.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 17.2661 -29.8967 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1120107594" name="fangdengtijiguang10">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang10.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1120107594" name="方灯体积光10">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光10.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 17.1923 -47.272 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1796376265" name="fangdengtijiguang11">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang11.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1796376265" name="方灯体积光11">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光11.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 17.2652 -63.5112 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1951645923" name="fangdengtijiguang12">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang12.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1951645923" name="方灯体积光12">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光12.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 17.2652 -79.849 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1273573108" name="fangdengtijiguang13">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang13.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1273573108" name="方灯体积光13">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光13.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -53.3388 -7.56085 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1707373937" name="fangdengtijiguang14">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang14.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1707373937" name="方灯体积光14">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光14.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -53.3379 -25.1105 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="170162826" name="fangdengtijiguang15">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang15.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="170162826" name="方灯体积光15">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光15.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -53.4117 -42.5055 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1189780908" name="fangdengtijiguang16">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang16.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1189780908" name="方灯体积光16">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光16.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -53.3388 -58.7004 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1621934634" name="fangdengtijiguang17">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang17.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1621934634" name="方灯体积光17">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光17.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -53.3388 -75.0696 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1892249671" name="fangdengtijiguang18">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang18.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1892249671" name="方灯体积光18">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光18.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -22.6091 -7.56085 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="12863211" name="fangdengtijiguang19">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang19.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="12863211" name="方灯体积光19">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光19.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -22.6082 -25.1105 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1260585269" name="fangdengtijiguang20">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang20.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1260585269" name="方灯体积光20">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光20.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -22.682 -42.5055 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="17848112" name="fangdengtijiguang21">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang21.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="17848112" name="方灯体积光21">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光21.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -22.6091 -58.7004 37.3126 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="889252340" name="fangdengtijiguang22">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/fangdengtijiguang22.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="889252340" name="方灯体积光22">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/方灯体积光22.mesh</mesh_name>
 					<surface name="23 - Default" material="23 - Default" property="surface_base"/>
 					<transform>-5.44283e-007 12.4518 -1.25636e-014 0 5.30707e-007 3.25905e-014 -6.14015 0 -12.1412 -5.30707e-007 -2.68395e-007 0 -22.6091 -75.0696 37.3126 1</transform>
 				</node>
 			</node>
-			<node type="ObjectMeshStatic" id="1134330470" name="diangui0">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/diangui0.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1134330470" name="电柜0">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/电柜0.mesh</mesh_name>
 				<surface name="Default" material="Default" property="surface_base"/>
 				<surface name="04 - Default" material="04 - Default" property="surface_base"/>
 				<transform>-5.51404e-007 -1.08581e-014 -12.6147 0 12.6147 2.23115e-006 -5.51404e-007 0 2.23115e-006 -12.6147 -3.08283e-014 0 -104.097 18.0545 2.56852 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1815277783" name="jinggaopai">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/jinggaopai.mesh</mesh_name>
-				<surface name="配diangui\1m_default" material="配diangui\1m_default" property="surface_base"/>
+			<node type="ObjectMeshStatic" id="1815277783" name="警告牌">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/警告牌.mesh</mesh_name>
+				<surface name="配电柜\1m_default" material="配电柜\1m_default" property="surface_base"/>
 				<surface name="06 - Default" material="06 - Default" property="surface_base"/>
 				<transform>1.03639e-007 -9.60535e-008 -0.636133 0 -0.428238 -9.26647e-008 -6.97688e-008 0 -1.04056e-007 0.523795 -7.90909e-008 0 -85.069 26.4608 3.05136 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="1575203283" name="guizhang">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/guizhang.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="1575203283" name="规章">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/规章.mesh</mesh_name>
 				<surface name="waikuang" material="waikuang" property="surface_base"/>
 				<surface name="21 - Default" material="21 - Default" property="surface_base"/>
 				<transform>0.04171 0 0 0 0 4.48588e-010 -0.0503578 0 0 0.0400953 -4.48588e-010 0 -97.302 29.141 -31.0924 1</transform>
 			</node>
-			<node type="ObjectMeshStatic" id="2011148616" name="jixiantu">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/jixiantu.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="2011148616" name="接线图">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/接线图.mesh</mesh_name>
 				<surface name="waikuang" material="waikuang" property="surface_base"/>
 				<surface name="jiexiantu" material="jiexiantu" property="surface_base"/>
 				<transform>3.4436e-009 8.51289e-017 -0.0456118 0 -0.0503578 1.48639e-010 -3.80191e-009 0 -1.48639e-010 0.0469573 -7.12433e-017 0 -116.977 27.7544 -4.52158 1</transform>
 			</node>
-			<node type="NodeDummy" id="2128174169" name="qiuxingshexiangji">
+			<node type="NodeDummy" id="2128174169" name="球型摄像机">
 				<transform>-0.707107 -1.12005e-015 0.707107 0 0.707107 -1.12005e-015 0.707107 0 0 1 0 0 -76.0057 28.7793 -38.2815 1</transform>
-				<node type="ObjectMeshStatic" id="151668243" name="shexiangji">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shexiangji.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="151668243" name="摄像机">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/摄像机.mesh</mesh_name>
 					<surface name="16 - Default" material="16 - Default" property="surface_base"/>
 					<transform>1 1.16532e-017 0 0 -2.78725e-015 1 9.05541e-008 0 8.5487e-015 -2.26013e-007 1.65556 0 4.0859e-008 4.0859e-008 -1.32193 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="1525852227" name="shexiangtou">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shexiangtou.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1525852227" name="摄像头">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/摄像头.mesh</mesh_name>
 					<surface name="16 - Default" material="16 - Default" property="surface_base"/>
 					<surface name="17 - Default" material="17 - Default" property="surface_base"/>
 					<transform>0.919421 4.56953e-017 1.69706e-015 0 -3.342e-015 0.919421 1.09604e-007 0 -5.77241e-015 -1.09604e-007 0.919421 0 0 0 -1.24785e-015 1</transform>
-					<node type="ObjectMeshStatic" id="1880943794" name="shexiangjishizhui">
-						<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shexiangjishizhui.mesh</mesh_name>
+					<node type="ObjectMeshStatic" id="1880943794" name="摄像机视锥">
+						<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/摄像机视锥.mesh</mesh_name>
 						<surface name="15 - Default" material="15 - Default" property="surface_base"/>
 						<transform>29.5688 2.78819e-015 -3.81113e-014 0 -4.19796e-014 49.4733 1.35747e-006 0 1.15195e-013 1.35748e-006 18.4179 0 -4.4007e-006 27.0458 -4.46267e-006 1</transform>
 					</node>
 				</node>
 			</node>
-			<node type="NodeDummy" id="237802760" name="qiuxingshexiangji001">
+			<node type="NodeDummy" id="237802760" name="球型摄像机001">
 				<transform>1.19249e-008 0 -1 0 4.37114e-008 -1 0 0 -1 -4.37114e-008 -1.19249e-008 0 -87.9667 34.885 2.26841 1</transform>
-				<node type="ObjectMeshStatic" id="1969795213" name="shexiangji001">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shexiangji001.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="1969795213" name="摄像机001">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/摄像机001.mesh</mesh_name>
 					<surface name="16 - Default" material="16 - Default" property="surface_base"/>
 					<transform>1 -6.61744e-024 -2.81998e-024 0 -1.07985e-015 1 9.0554e-008 0 6.34187e-016 -2.26013e-007 1.65556 0 1.57639e-008 5.77834e-008 -1.32193 1</transform>
 				</node>
-				<node type="ObjectMeshStatic" id="236004629" name="shexiangtou002">
-					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shexiangtou002.mesh</mesh_name>
+				<node type="ObjectMeshStatic" id="236004629" name="摄像头002">
+					<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/摄像头002.mesh</mesh_name>
 					<surface name="16 - Default" material="16 - Default" property="surface_base"/>
 					<surface name="17 - Default" material="17 - Default" property="surface_base"/>
 					<transform>0.919421 -1.54741e-015 2.57435e-016 0 -3.66231e-015 0.590993 0.704318 0 1.76494e-016 -0.704318 0.590993 0 0 -2.0357e-015 0 1</transform>
-					<node type="ObjectMeshStatic" id="1286935369" name="shexiangjishizhui001">
-						<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shexiangjishizhui001.mesh</mesh_name>
+					<node type="ObjectMeshStatic" id="1286935369" name="摄像机视锥001">
+						<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/摄像机视锥001.mesh</mesh_name>
 						<surface name="15 - Default" material="15 - Default" property="surface_base"/>
 						<transform>23.9967 6.56282e-015 -1.84286e-014 0 6.78976e-014 18.2207 7.753e-007 0 1.3835e-014 3.26617e-007 14.9472 0 -1.34573e-007 10.5792 -5.20789e-006 1</transform>
 					</node>
 				</node>
 			</node>
-			<node type="ObjectMeshStatic" id="97092504" name="shapan">
-				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/shapan.mesh</mesh_name>
+			<node type="ObjectMeshStatic" id="97092504" name="沙盘">
+				<mesh_name>worlds/5Fzhanting/5Fzhanting_2020-06-11_14-51-31-6/meshes/沙盘.mesh</mesh_name>
 				<surface name="12 - Default" material="12 - Default" property="surface_base"/>
 				<transform>-5.51404e-007 -2.60151e-014 -12.6147 0 12.6147 2.23115e-006 -5.51404e-007 0 2.23115e-006 -12.6147 -7.25147e-014 0 103.029 11.3823 -2.35401 1</transform>
 				<node type="ObjectMeshStatic" id="2009641484" name="1f">
