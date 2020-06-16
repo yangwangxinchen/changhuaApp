@@ -197,7 +197,7 @@
             /* border-image-source: url('textures/bg02.png'); */
        }
 
-       #mask {
+   #mask {
         width: 100%;
         height: 100vh;
         background-color: #333;
@@ -206,6 +206,12 @@
         left: 0;
         top: 0;
   }
+
+   #device02{
+    width: 150px;
+    height: 20px;
+    font-size:5px;
+   }
   </style>
 
   
@@ -229,7 +235,7 @@
   <script>
     var Public_Engine = new MakerJS.Engine();
     //文件路径  是否合并 回调函数
-    Public_Engine.load('mesh/展厅配电房.world', false, function () {})
+    Public_Engine.load('mesh/hallDistribution.world', false, function () {})
   
   </script>
 </body>

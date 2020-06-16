@@ -151,13 +151,31 @@ var css3DRenderer
         return  label3d
     }
 
+    var circlesName=[
+        '电动窗帘一、二正转',
+        '电动窗帘一、二反转',
+        '电动窗帘三、四正转',
+        '电动窗帘三、四反转',
+        '展厅空调',
+        '备用',
+        '备用',
+        '备用',
+        '备用',
+        '展厅大屏',
+        '备用',
+        '框架出线1',
+        '框架出线2',
+        '展厅照明1',
+        '展厅照明2',
+        '展厅照明4'
+    ]
     var circle_1_css
     var A_VOL=232.9,
         A_ELE=0.613,
         UAB_VOL=406,
         TEMP=31.5
     var circleName ='展厅1回路'   
-    var device01
+    var device01,device02
     //设置css样式
     function setCSS(){
         device01=document.getElementById('device01')
@@ -166,6 +184,21 @@ var css3DRenderer
 
         circle_1_css=createCSS3DObject(device01)
         circle_1_css.name='circle_css'
+
+        device02=document.getElementById('device02')
+        device02.innerText=circlesName[0]
+
+        var group_D3=new THREE.Group();
+        
+        // for(var i=0;i++;i<11){
+        //   var circleNode=document.createElement('circle'+i)
+
+          
+        // }
+        var nameLabel= createCSS3DObject(device02)
+        nameLabel.scale.set(0.2,0.2,0.2)
+        nameLabel.position.set(-184,12,305)
+        engine.scene.add(nameLabel)
         
     }
 
@@ -204,21 +237,21 @@ function eveChoose(e){
     }else if(nameNode=='柜3回路01'){
         changeCSS('展厅1回路',-222,10,300)
     }else if(nameNode=='柜3回路02'){
-        changeCSS('展厅3回路',-222,10,270)
+        changeCSS('展厅2回路',-222,10,270)
     }else if(nameNode=='柜3回路03'){
-        changeCSS('展厅4回路',-222,10,240)
+        changeCSS('展厅3回路',-222,10,240)
     }else if(nameNode=='柜3回路04'){
-        changeCSS('展厅5回路',-222,10,220)
+        changeCSS('展厅4回路',-222,10,220)
     }else if(nameNode=='柜3回路05'){
-        changeCSS('展厅6回路',-222,10,190)
+        changeCSS('展厅5回路',-222,10,190)
     }else if(nameNode=='柜3回路06'){
-        changeCSS('展厅7回路',-222,10,160)
+        changeCSS('展厅6回路',-222,10,160)
     }else if(nameNode=='柜3回路07'){
-        changeCSS('展厅8回路',-222,10,140)
+        changeCSS('展厅7回路',-222,10,140)
     }else if(nameNode=='柜3回路08'){
-        changeCSS('展厅9回路',-222,10,110)
+        changeCSS('展厅8回路',-222,10,110)
     }else if(nameNode=='柜3回路09'){
-        changeCSS('备用',-222,10,90)
+        changeCSS('展厅9回路',-222,10,90)
     }else if(nameNode=='柜3回路10'){
         changeCSS('备用',-222,10,60)
     }else if(nameNode=='柜3回路11'){
@@ -260,7 +293,7 @@ var index=0
     client.on('message',function (topic, message) {
         index++;   //62
        const deviceName=topic.substring(13)
-    //    console.log(index+':'+deviceName+':'+message.toString())
+       console.log(index+':'+deviceName+':'+message.toString())
        //message.toString().match(/\"SwitchOn\": \d/)   是个数组
        //message.toString().match(/\"SwitchOn\": \d/)[0]   "SwitchOn": 0
     //    let circleState=(message.toString().match(/\"SwitchOn\": \d/)[0])
