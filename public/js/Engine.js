@@ -37,8 +37,8 @@ MakerJS.Engine = function () {
     
 
     //辅助线
-    this.axesHelper = new THREE.AxesHelper( 1000 );
-    this.scene.add( this.axesHelper );
+    // this.axesHelper = new THREE.AxesHelper( 1000 );
+    // this.scene.add( this.axesHelper );
 
     
     this.renderer = new THREE.WebGLRenderer({

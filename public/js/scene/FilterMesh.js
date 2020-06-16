@@ -36,13 +36,13 @@ this.set_meshArray=function(world_name,meshPath){
         // console.log(this.world_name)
     }
     switch(world_name) {
-        case '配电房':
+        case 'distributionRoom':   //配电房
             this.get_meshArray(meshPath,this.distributionRoomMeshs)
            break;
-        case '展厅':
+        case 'exhibitionHall':     //展厅
             this.get_meshArray(meshPath,this.exhibitionHallMeshs)
            break;
-        case '展厅配电房':
+        case 'hallDistribution':    //配电间
             this.get_meshArray(meshPath,this.hallDistributionMeshs)
         default:
            break;
@@ -58,19 +58,19 @@ function loadEnd(){
     document.getElementById('mask').style.display='none'
     switch(this.world_name) {
         
-        case '配电房':
+        case 'distributionRoom':
             this.engine.camera.position.set(0,-500,200)
             var distributionRoom=new MakerJS.distributionRoom()
             console.log(_this.distributionRoomMeshs)
             distributionRoom.initSceneMeshs(engine,_this.distributionRoomMeshs)
         break;
-        case '展厅':
+        case 'exhibitionHall':
             this.engine.camera.position.set(0,-100,200)
             console.log(_this.exhibitionHallMeshs)
             var exhib=new MakerJS.exhibitionHall()
             exhib.init(engine,_this.exhibitionHallMeshs)
         break;
-        case '展厅配电房':
+        case 'hallDistribution':
             this.engine.camera.position.set(0,-800,500)
             console.log(_this.hallDistributionMeshs)
             var hallDistribution=new MakerJS.hallDistribution()
